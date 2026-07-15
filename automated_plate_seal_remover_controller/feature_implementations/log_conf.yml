@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: False
+handlers:
+  consoleHandler:
+    class: logging.StreamHandler
+    formatter: consoleFormatter
+    stream: ext://sys.stdout
+  rotatingFileHandler:
+    class: logging.handlers.RotatingFileHandler
+    filename: ./log/automated_plate_seal_remover_controller.log
+    formatter: fileFormatter
+    encoding: utf-8
+    maxBytes: 2097152
+    backupCount: 20
+formatters:
+  consoleFormatter:
+    format: "[%(levelname)s] %(asctime)s %(name)s [%(filename)s:%(lineno)d] %(message)s"
+  fileFormatter:
+    format: "[%(levelname)s] %(asctime)s %(name)s [%(filename)s:%(lineno)d] %(message)s"
+loggers:
+  root:
+    level: DEBUG
+    handlers:
+      - consoleHandler
+  automated_plate_seal_remover_controller:
+    level: INFO
+    handlers:
+      - rotatingFileHandler
+  uvicorn:
+    level: INFO
+    handlers:
+      - rotatingFileHandler

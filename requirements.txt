@@ -1,0 +1,4 @@
+pyserial==3.5
+PyYAML==6.0.3
+sila2==0.14.0
+typer==0.20.0
