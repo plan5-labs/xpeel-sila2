@@ -353,3 +353,9 @@ You can find a simple script at `automated_plate_seal_remover_controller/example
 - Set "host", "port", and "cert_path" in  `automated_plate_seal_remover_controller/examples/snip_xpeel.py`
 - Activate a virtual environment
 - Run your script
+
+## License
+
+MIT License. Copyright (c) 2025-2026 RIKEN. See [LICENSE](LICENSE).
+
+Third-party packages are subject to their own licenses (see [ThirdPartyNotices.md](ThirdPartyNotices.md)).
