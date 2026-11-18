@@ -1,5 +1,10 @@
 # Automated Plate Seal Remover Controller
 
+> ⚠️ **Disclaimer**: This software is under active development. It comes with
+> **no warranty** and the authors accept **no liability** for any results or
+> damages. Use at your own risk, and verify safety before connecting to real
+> hardware.
+
 A Python SiLA Server for controlling the Automated Plate Seal Remover (formerly known as Xpeel) made by Azenta Life Sciences.  
 
 ## About
